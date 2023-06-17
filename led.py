@@ -7,6 +7,7 @@ try:
     GPIO.output(pin, True)
     time.sleep(0.5)
     GPIO.output(pin, False)
+    time.sleep(0.5)
 except KeyboardInterrupt:
     GPIO.cleanup()
     exit()
